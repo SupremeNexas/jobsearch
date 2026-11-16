@@ -1,0 +1,90 @@
+{
+  "actorSpecification": 1,
+  "name": "resume-autofill-actor",
+  "title": "Resume Autofill Actor",
+  "version": "1.0.0",
+  "dockerfile": "./Dockerfile",
+  "input": {
+    "type": "object",
+    "properties": {
+      "searchKeywords": {
+        "type": "array",
+        "title": "Job Search Keywords",
+        "description": "Keywords to search for jobs (e.g. ['React Developer', 'Node Engineer'])",
+        "editor": "json",
+        "default": [
+          "Software Engineer",
+          "Backend Engineer",
+          "Fullstack Engineer"
+        ]
+      },
+      "location": {
+        "type": "string",
+        "title": "Search Location",
+        "description": "E.g. Remote, Gujarat, United States",
+        "default": "Remote"
+      },
+      "baseResume": {
+        "type": "string",
+        "title": "Base Resume (Markdown)",
+        "description": "Provide your base resume in markdown format",
+        "editor": "textarea"
+      },
+      "anthropicApiKey": {
+        "type": "string",
+        "title": "Anthropic API Key",
+        "description": "Used to tailor the resume with Claude",
+        "isSecret": true
+      },
+      "applicantDetails": {
+        "type": "object",
+        "title": "Applicant Personal Info",
+        "description": "Details to autofill in application forms",
+        "properties": {
+          "firstName": { "type": "string", "title": "First Name" },
+          "lastName": { "type": "string", "title": "Last Name" },
+          "email": { "type": "string", "title": "Email" },
+          "phone": { "type": "string", "title": "Phone" },
+          "linkedin": { "type": "string", "title": "LinkedIn URL" },
+          "github": { "type": "string", "title": "GitHub URL" },
+          "portfolio": { "type": "string", "title": "Portfolio URL" },
+          "location": { "type": "string", "title": "Current City/Address" },
+          "workAuthorization": {
+            "type": "string",
+            "title": "Are you authorized to work? (Yes/No)",
+            "default": "Yes"
+          },
+          "requiresSponsorship": {
+            "type": "string",
+            "title": "Will you require visa sponsorship? (Yes/No)",
+            "default": "No"
+          }
+        },
+        "required": [
+          "firstName",
+          "lastName",
+          "email",
+          "phone",
+          "linkedin",
+          "github"
+        ]
+      },
+      "autoSubmit": {
+        "type": "boolean",
+        "title": "Auto Submit Application",
+        "description": "If enabled, Playwright will click submit. Otherwise, it will just fill and take a screenshot.",
+        "default": false
+      },
+      "notificationWebhook": {
+        "type": "string",
+        "title": "Slack Webhook URL",
+        "description": "Slack webhook URL to send reports to",
+        "default": ""
+      }
+    },
+    "required": [
+      "baseResume",
+      "applicantDetails"
+    ]
+  }
+}

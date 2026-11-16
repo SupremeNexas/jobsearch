@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+actor/node_modules/
+.pnp
+.pnp.js
+
+# Testing & Coverage
+coverage/
+
+# Production & Deploy builds
+jobsearch_deploy/
+.vercel
+career-ops-main/
+
+# Databases & Runtime State
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+data/
+actor/data/
+*discovery_results.json
+actor/latest_discovery_results.json
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+actor/.env
+
+# Output & Generated Resumes & Screenshots
+tailored_resumes/
+actor/tailored_resumes/
+public/screenshots/
+actor/public/screenshots/
+autofill_result.png
+actor/autofill_result.png
+test_resume_output.pdf
+
+# Personal Resumes & College Docs
+resumes/master_resume.pdf
+resumes/resume_12_8_26.*
+Digital_Forensics_Practical_*
+Set09_*
+StepRecorder_*
+*.docx
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.claude/

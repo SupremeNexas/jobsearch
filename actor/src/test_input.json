@@ -1,0 +1,17 @@
+{
+  "searchKeywords": ["Software Engineer"],
+  "location": "Remote",
+  "applicantDetails": {
+    "firstName": "Alex",
+    "lastName": "Morgan",
+    "email": "alex.morgan@example.com",
+    "phone": "+1-555-0199",
+    "linkedin": "https://linkedin.com/in/alexmorgan",
+    "github": "https://github.com/alexmorgan",
+    "portfolio": "https://alexmorgan.dev",
+    "location": "San Francisco, CA, United States",
+    "workAuthorization": "Yes",
+    "requiresSponsorship": "No"
+  },
+  "autoSubmit": false
+}

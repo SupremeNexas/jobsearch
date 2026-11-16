@@ -1,0 +1,23 @@
+{
+  "searchKeywords": [
+    "Software Engineer",
+    "Backend Engineer",
+    "Full Stack Engineer"
+  ],
+  "location": "Remote",
+  "baseResume": "# Alex Morgan\n\n+1-555-0199 | alex.morgan@example.com | [LinkedIn](https://linkedin.com/in/alexmorgan) | [GitHub](https://github.com/alexmorgan) | [Portfolio](https://alexmorgan.dev)\n\n---\n\n## Education\n\n**University of Technology** | San Francisco, CA\n*Bachelor of Science in Computer Science (GPA: 3.8/4.00)* | August 2022 – May 2026\n\n---\n\n## Experience\n\n**Tech Innovations Inc.** | San Francisco, CA\n*Software Engineering Intern* | May 2025 – August 2025\n\n* Built modular RESTful microservices in Node.js and TypeScript serving 20,000+ daily active users.\n* Implemented Redis caching layer improving API query latency by 45%.\n* Designed automated end-to-end test suites using Playwright with 90%+ branch coverage.\n\n---\n\n## Projects\n\n**CloudSync** | Go, gRPC, Redis, Docker, Prometheus\n* Engineered a distributed high-throughput task queue in Go handling 10,000+ concurrent jobs.\n\n**Finova** | Node.js, Express.js, PostgreSQL, React\n* Developed a full-stack financial platform with secure JWT auth, session management, and RBAC.\n\n**Job Discovery Engine** | Python, FastAPI, React.js, Scrapy\n* Aggregated listings from multiple job boards into unified daily data streams with automated deduplication.\n\n---\n\n## Technical Skills\n\n* **Languages:** JavaScript, TypeScript, Python, Go, SQL\n* **Frameworks:** React.js, Next.js, Node.js, Express.js, FastAPI\n* **Databases & Tools:** PostgreSQL, MongoDB, Redis, SQLite, Docker, Git, Playwright\n",
+  "applicantDetails": {
+    "firstName": "Alex",
+    "lastName": "Morgan",
+    "email": "alex.morgan@example.com",
+    "phone": "+1-555-0199",
+    "linkedin": "https://linkedin.com/in/alexmorgan",
+    "github": "https://github.com/alexmorgan",
+    "portfolio": "https://alexmorgan.dev",
+    "location": "San Francisco, CA, United States",
+    "workAuthorization": "Yes",
+    "requiresSponsorship": "No"
+  },
+  "autoSubmit": false,
+  "targetCompanies": []
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mock Greenhouse Application Form (Local Test Sandbox)</title>
+    <style>
+        body { font-family: sans-serif; background: #e0f2fe; padding: 20px; }
+        .card { background: white; max-width: 500px; margin: 40px auto; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .field { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; font-size: 14px; }
+        input[type="text"], input[type="email"], input[type="tel"] { width: 95%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        input[type="file"] { margin-top: 5px; }
+        button { background: #0284c7; color: white; border: none; padding: 10px 20px; font-weight: bold; border-radius: 6px; cursor: pointer; }
+        button:hover { background: #0369a1; }
+        .success { display: none; background: #dcfce7; border: 1px solid #bbf7d0; color: #166534; padding: 15px; border-radius: 8px; margin-top: 20px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Figma — Software Engineer (Local Mock Job Application)</h2>
+        <p style="font-size: 12px; color: #555;">This is a local sandboxed target page used to test Playwright autofilling loops safely.</p>
+        <hr>
+        <form id="mock_form" onsubmit="event.preventDefault(); document.getElementById('mock_form').style.display='none'; document.getElementById('success_box').style.display='block';">
+            <div class="field">
+                <label for="first_name">First Name *</label>
+                <input type="text" id="first_name" name="job_application[first_name]" required>
+            </div>
+            <div class="field">
+                <label for="last_name">Last Name *</label>
+                <input type="text" id="last_name" name="job_application[last_name]" required>
+            </div>
+            <div class="field">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="job_application[email]" required>
+            </div>
+            <div class="field">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="job_application[phone]" required>
+            </div>
+            <div class="field">
+                <label for="linkedin_url">LinkedIn URL</label>
+                <input type="text" id="linkedin_url" name="linkedin" placeholder="https://linkedin.com/in/...">
+            </div>
+            <div class="field">
+                <label>Resume Draft *</label>
+                <button type="button" id="resume_attach_btn" data-source="attach" onclick="document.getElementById('file_input').click()">Attach PDF</button>
+                <input type="file" id="file_input" style="display:none;" name="resume" onchange="document.getElementById('file_name').innerText = this.files[0] ? this.files[0].name : ''">
+                <span id="file_name" style="font-size:12px; color:#444; margin-left: 10px;"></span>
+            </div>
+            <div class="field" style="margin-top: 25px;">
+                <button type="submit" id="submit_app">Submit Application</button>
+            </div>
+        </form>
+
+        <div id="success_box" class="success">
+            <h3>🎉 Mock Submission Cleared!</h3>
+            <p>Your local test application was successfully submitted to the sandbox.</p>
+        </div>
+    </div>
+</body>
+</html>

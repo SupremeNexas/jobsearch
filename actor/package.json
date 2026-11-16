@@ -1,0 +1,33 @@
+{
+  "name": "resume-autofill-actor",
+  "version": "1.0.0",
+  "description": "Searches for job listings, tailors resumes using Claude, and auto-fills Job Applications on Greenhouse & Lever.",
+  "main": "src/main.js",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.20.0",
+    "apify": "^3.1.4",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "imap-simple": "^5.1.0",
+    "mailparser": "^3.14.2",
+    "morgan": "^1.11.0",
+    "playwright": "^1.40.1",
+    "sqlite3": "^6.0.1"
+  },
+  "scripts": {
+    "start": "node src/main.js",
+    "discover:winter": "node scripts/ingest_winter_internships.js",
+    "test": "node src/test_discovery_engine.js",
+    "test:discovery": "node src/test_discovery_engine.js",
+    "test:mock": "node src/test_mock_run.js",
+    "test:aihawk": "node src/test_aihawk_integration.js",
+    "test:manual": "node src/test_manual_assisted.js",
+    "test:routes": "node src/test_aihawk_routes.js",
+    "test:validation": "node src/test_strict_validation.js",
+    "test:dedup": "node src/test_never_apply_twice.js",
+    "test:captcha": "node src/test_captcha_popup.js"
+  },
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,103 @@
+{
+  "personal_information": {
+    "first_name": "Alex",
+    "last_name": "Morgan",
+    "email": "alex.morgan@example.com",
+    "phone": "+1-555-0199",
+    "alternate_phone": "+1-555-0198",
+    "linkedin": "https://www.linkedin.com/in/alexmorgan",
+    "github": "https://github.com/alexmorgan",
+    "portfolio": "https://alexmorgan.dev",
+    "location": {
+      "city": "San Francisco",
+      "state": "California",
+      "country": "United States"
+    }
+  },
+  "education_details": [
+    {
+      "institution": "University of Technology",
+      "location": "San Francisco, CA",
+      "degree": "Bachelor of Science",
+      "field_of_study": "Computer Science",
+      "gpa": "3.80/4.00",
+      "start_date": "August 2022",
+      "end_date": "May 2026"
+    }
+  ],
+  "experience_details": [
+    {
+      "company": "Tech Innovations Inc.",
+      "position": "Software Engineering Intern",
+      "location": "San Francisco, CA",
+      "start_date": "May 2025",
+      "end_date": "August 2025",
+      "responsibilities": [
+        "Architected modular microservices using Node.js and TypeScript handling 20,000+ daily API requests.",
+        "Integrated AI retrieval-augmented generation (RAG) pipelines for automated document insights and search.",
+        "Optimized PostgreSQL query schemas and added Redis caching, reducing median response latency by 45%.",
+        "Created end-to-end browser automation workflows and automated integration test suites with Playwright."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "CloudSync",
+      "skills": ["Go", "gRPC", "Redis", "Docker", "Prometheus"],
+      "date": "December 2025",
+      "highlights": [
+        "Engineered a distributed high-throughput task queue in Go handling 10,000+ concurrent jobs.",
+        "Decreased worker dispatch latency by 40% using Redis pipelines and gRPC protocol buffers.",
+        "Maintained 99.9% service availability with Prometheus telemetry and alerting."
+      ]
+    },
+    {
+      "name": "Finova",
+      "skills": ["Node.js", "Express.js", "PostgreSQL", "React", "JavaScript", "LangChain"],
+      "date": "October 2025",
+      "highlights": [
+        "Developed a full-stack expense management platform with secure JWT auth, session management, and RBAC.",
+        "Built 20+ RESTful APIs for transactions, budgeting, and automated financial insights.",
+        "Visualized spending analytics with real-time interactive charts."
+      ]
+    },
+    {
+      "name": "JobDiscoveryEngine",
+      "skills": ["Python", "FastAPI", "React.js", "MongoDB", "Scrapy", "Redis"],
+      "date": "August 2025",
+      "highlights": [
+        "Aggregated listings from multiple job boards into unified daily data streams.",
+        "Streamlined application tracking across categories using a responsive Kanban board.",
+        "Boosted crawler throughput by 50% via asynchronous scheduling and retry hooks."
+      ]
+    }
+  ],
+  "skills": {
+    "languages": ["Python", "Java", "C", "C++", "Go", "JavaScript", "TypeScript", "SQL"],
+    "frontend": ["React.js", "Next.js", "HTML", "CSS", "Tailwind CSS"],
+    "backend": ["Node.js", "Express.js", "FastAPI", "REST APIs", "gRPC"],
+    "agentic_ai": ["AI Agents", "Multi-Agent Systems", "Tool Calling", "API Orchestration", "Autonomous Workflows"],
+    "ai_ml": ["LLMs", "RAG", "NLP", "Transformers", "LangChain", "Scikit-learn"],
+    "databases": ["PostgreSQL", "MongoDB", "Redis", "SQLite"],
+    "tools": ["Git", "GitHub", "Docker", "Prometheus", "Playwright", "VS Code", "Linux"]
+  },
+  "certifications": [
+    "AWS Certified Solutions Architect Associate",
+    "Professional Developer Certification in AI & Cloud Computing"
+  ],
+  "work_preferences": {
+    "preferred_roles": [
+      "Software Engineer",
+      "Backend Engineer",
+      "Full Stack Engineer",
+      "Software Engineer Intern",
+      "AI Engineer"
+    ],
+    "target_internship_period": "Summer / Full-Time",
+    "locations": ["Remote", "Worldwide"],
+    "requires_sponsorship": "No",
+    "work_authorization": "Yes",
+    "availability": "Immediate",
+    "salary_expectation": "Competitive"
+  }
+}

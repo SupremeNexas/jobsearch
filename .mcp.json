@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "apify": {
+      "command": "npx",
+      "args": ["-y", "@apify/mcp-server"],
+      "env": {
+        "APIFY_TOKEN": "REDACTED_USE_ENV_VAR"
+      }
+    }
+  }
+}
